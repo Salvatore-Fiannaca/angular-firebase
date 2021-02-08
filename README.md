@@ -1,3 +1,4 @@
 # Personal Web Site
 
-Frontend in Angular + Firebase [Link](https://kalos-auth.web.app/)
+Frontend in Angular + Firebase.
+[Link web-site](https://kalos-auth.web.app/)
