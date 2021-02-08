@@ -1,0 +1,9 @@
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+@media(max-width: 1024px){
+  .icon-social{
+    display: none;
+  }
+}

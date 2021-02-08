@@ -1,0 +1,41 @@
+<section id="homepage" class="grid items-center text-center text-white h-screen">
+  <h1 class="text-6xl font-bold text-shadow-xl">Calogero Fiannaca<br>
+    <small class="text-base text-2xl text-shadow-xl sub-text">Compositore e Clarinettista</small>
+  </h1>
+
+  <div class="lg:-mt-64 -mt-44 w-screen">
+    <div class="flex justify-center items-center" id="btn"> 
+      <a routerLink="/contatti"
+        class="btn_fix button border-2 border-white font-bold transition duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"
+        >
+        Contatti
+      </a>
+      <a (click)="scroll(contents)"
+         class="btn_fix button bg-blue-900 border-2 border-white font-bold transition hover:bg-blue-800 zoom cursor-pointer"
+      >
+        Servizi 
+      </a>
+    </div>
+  </div>
+</section>
+
+<section #contents class="grid items-center text-center font-bold bg-gray-300 py-6">
+  <div class="px-8 py-6">
+    <a routerLink="/trascrizioni" id="cover-transcription" class="overflow-hidden block hover:shadow-2xl zoom-light" >
+      <h2 class="title-service">Trascrizioni</h2>
+    </a>
+  </div>
+  
+  <div class="px-8 py-6">
+    <a routerLink="/arrangiamenti" id="cover-arrangment" class="overflow-hidden block hover:shadow-2xl zoom-light">
+      <h2 class="title-service">Arrangiamenti</h2>
+    </a>
+  </div>
+
+  <div class="px-8 py-6">
+    <a routerLink="/composizioni" id="cover-composition" class="overflow-hidden block hover:shadow-2xl zoom-light">
+      <h2 class="title-service">Composizioni</h2>
+    </a>
+  </div>
+</section>
+

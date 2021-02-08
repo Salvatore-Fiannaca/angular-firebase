@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icons-generic {
+  margin: .15em;
+  height: 1.5em;
+  width : 1.5em;
+}
+
+youtube-player {
+  iframe {
+      max-width: fit-content !important;
+      object-fit: contain;
+  }
+}
+
+.zoom {
+  transition: transform .6s; 
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.zoom-light {
+  transition: transform .8s; 
+  &:hover {
+    transform: scale(1.01);
+  }
+}

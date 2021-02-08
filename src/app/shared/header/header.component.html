@@ -1,0 +1,105 @@
+<header class="lg:px-16 px-6 bg-gray-300 flex flex-wrap items-center lg:py-0 py-2 text-black">
+  <div class="flex-1 flex justify-between items-center">
+    <a routerLink="/">
+     <label class="text-base cursor-pointer">Kalos</label>
+    </a>
+  </div>
+
+  <label for="menu-toggle" class="cursor-pointer lg:hidden block"
+    ><svg
+      class="fill-current text-gray-900"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+    >
+      <title>menu</title>
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+  ></label>
+  <input class="hidden" type="checkbox" id="menu-toggle" />
+
+  <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <nav>
+      <ul
+        class="lg:flex items-center justify-between text-base pt-4 lg:pt-0"
+      >
+        <li *ngIf="admin">
+          <a
+            class="lg:p-4 py-3 block border-b-2 border-transparent hover:border-black hover:bg-gray-200"
+            routerLink="/dashboard"
+            (click)="closeNavBar()"
+            >Dashboard</a
+          >
+        </li>
+        <li *ngIf="!admin">
+          <a
+            class="lg:p-4 py-3 block border-b-2 border-transparent hover:border-black hover:bg-gray-200"
+            routerLink="/"
+            (click)="closeNavBar()"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="lg:p-4 py-3 block border-b-2 border-transparent hover:border-black hover:bg-gray-200"
+            routerLink="/trascrizioni"
+            (click)="closeNavBar()"
+            >Trascrizioni</a
+          >
+        </li>
+        <li>
+          <a
+            class="lg:p-4 py-3 block border-b-2 border-transparent hover:border-black hover:bg-gray-200"
+            routerLink="/arrangiamenti"
+            (click)="closeNavBar()"
+            >Arrangiamenti</a
+          >
+        </li>
+        <li>
+          <a
+            class="lg:p-4 py-3 block border-b-2 border-transparent hover:border-black hover:bg-gray-200"
+            routerLink="/composizioni"
+            (click)="closeNavBar()"
+            >Composizioni</a
+          >
+        </li>
+        <li>
+          <a
+            class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:bg-gray-200 lg:mb-0 mb-2"
+            routerLink="/contatti"
+            (click)="closeNavBar()"
+            >Contatti</a
+          >
+        </li>
+        <li *ngIf="admin">
+          <a
+            (click)="logout()"
+            class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-black hover:bg-gray-200 lg:mb-0 mb-2"
+            routerLink="/contatti"
+            (click)="closeNavBar()"
+            >Esci</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul
+      class="flex items-center justify-between gap-2 px-10 pr-0 mr-0 text-base pt-4 lg:pt-0"
+    >
+      <li class="icon-social cursor-pointer zoom">
+        <a href="https://it-it.facebook.com/calogero.fiannaca.5" target="__blank">
+          <img src="../../../assets/svg/facebook.svg" width="20" height="20">
+        </a>
+      </li>
+      <li class="icon-social cursor-pointer zoom">
+        <a href="https://www.instagram.com/__calogero_/" target="__blank">
+          <img src="../../../assets/svg/instagram.svg" width="20" height="20">
+        </a>
+      </li>
+      <li class="icon-social cursor-pointer zoom">
+        <a href="https://www.youtube.com/channel/UCapKrBeg0gA0Yqm13kyOidw" target="__blank">
+          <img src="../../../assets/svg/youtube.svg" width="20" height="20">
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

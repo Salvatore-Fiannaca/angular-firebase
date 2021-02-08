@@ -1,0 +1,11 @@
+@media (max-width: 576px) { 
+    #link_social{
+        display: grid;
+        width: 100%;
+    }
+}
+
+#link_social{
+    max-width: 900px;
+    margin: auto;
+}
